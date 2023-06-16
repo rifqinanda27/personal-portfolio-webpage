@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;
+  }
+  
+  /* NAVBAR */
+  
+  #navbar {
+    background-color: #C84B31;
+    top: 0;
+    width: 100%;
+    position: fixed;
+  }
+  
+  ul li{
+    display: flex;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #ECDBBA;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  .nav-link:hover {
+    color: #C84B31;
+    background-color: #ECDBBA;
+  }
+  
+  /* HEADER WELCOME */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #191919;
+    color: #ECDBBA;
+  }
+  
+  .header h1{
+    font-size: 60px
+  }
+  
+  .header i{
+    color: #C84B31;
+    font-size: 25px;
+  }
+  
+  /* PROJECTS */
+  #projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #2D4263;
+    color: #ECDBBA;
+  }
+  
+  .projects-head h1{
+    font-size: 50px;
+  }
+  
+  /* PROJECT-TILE */
+  
+  .project-tile {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .card {
+    margin-top: 100px;
+    height: 43vh;
+    background-color: #191919;
+  }
+  
+  .card h1 {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project {
+    color: #ECDBBA;
+    text-decoration: none;
+  }
+  
+  .code {
+    color: #191919;
+    transition: color 0.3s;
+  }
+  
+  .project:hover .code {
+    font-size: 25px;
+    color: #C84B31;
+  }
+  
+  .card img {
+    width: 500px;
+    height: 350px;
+  }
+  
+  /* CONTACT */
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #191919;
+    color: #ECDBBA;
+  }
+  
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-header h1 {
+    font-size: 60px;
+  }
+  
+  .contact-header i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+  }
+  
+  .brands {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+  }
+  
+  .brands a {
+    text-decoration: none;
+    color: #ECDBBA;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    transition: 0.3s;
+  }
+  
+  .brands a:hover {
+    transform: translateY(8px);
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #191919;
+    color: #ECDBBA;
+    padding: 50px;
+    font-size: 20px;
+  }
+  
+  hr {
+    height: 5px;
+    color: #ECDBBA;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+  
+    #projects {
+      height: 220vh;
+    }
+  
+    .project-tile {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .card {
+      height: 52vh;
+      width: 100%;
+      background-color: #191919;
+    }
+  
+    .projects-head h1 {
+      font-size: 40px;
+    }
+  
+    .social-media {
+      display: flex;
+      flex-direction: column;
+    }
+  }
